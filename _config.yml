@@ -19,3 +19,4 @@ plugins:
 exclude: ['README.md', '_config.yml']
 include: ['index.html', 'script.js', 'styles.css']
 markdown: kramdown
+title: Cinematic Minesweeper
