@@ -4,3 +4,4 @@ plugins:
   - jekyll-relative-links
 include: ['index.html', 'script.js', 'styles.css']
 exclude: ['README.md']
+markdown: kramdown
