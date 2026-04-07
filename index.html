@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Minesweeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Minesweeper</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Best Time:</span>
+                    <span class="value" id="best-time">--</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Win Rate:</span>
+                    <span class="value" id="win-rate">0%</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Streak:</span>
+                    <span class="value" id="streak">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="game-board" id="game-board"></main>
+        
+        <footer class="game-controls">
+            <button class="btn new-game" id="new-game">New Game</button>
+            <div class="timer">
+                <span class="label">Time:</span>
+                <span class="value" id="timer">0</span>
+            </div>
+            <div class="mines-left">
+                <span class="label">Mines:</span>
+                <span class="value" id="mines-left">10</span>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
