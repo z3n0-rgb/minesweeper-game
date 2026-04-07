@@ -6,3 +6,4 @@ include: ['index.html', 'script.js', 'styles.css']
 exclude: ['README.md']
 markdown: kramdown
 title: Cinematic Minesweeper
+description: A cinematic Minesweeper game with animations, scoreboard, and streak tracking
