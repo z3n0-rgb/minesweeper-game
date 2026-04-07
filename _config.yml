@@ -17,3 +17,4 @@ plugins:
   - jekyll-relative-links
   - jekyll-optional-front-matter
 exclude: ['README.md', '_config.yml']
+include: ['index.html', 'script.js', 'styles.css']
