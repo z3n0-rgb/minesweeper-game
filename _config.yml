@@ -3,3 +3,4 @@ baseurl: /minesweeper-game
 plugins:
   - jekyll-relative-links
 include: ['index.html', 'script.js', 'styles.css']
+exclude: ['README.md']
