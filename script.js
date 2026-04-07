@@ -116,40 +116,45 @@ class MinesweeperGame {
         }
     }
     
-    bindEvents() {
+bindEvents() {
         const gameBoard = document.getElementById('game-board');
         const newGameBtn = document.getElementById('new-game');
-        
+        const restartBtn = document.getElementById('restart-game');
+
         gameBoard.addEventListener('click', (e) => {
             if (this.gameOver) return;
-            
+
             const cell = e.target;
             if (!cell.classList.contains('cell')) return;
-            
+
             const row = parseInt(cell.dataset.row);
             const col = parseInt(cell.dataset.col);
-            
+
             if (!this.revealed[row][col] && !this.flagged[row][col]) {
                 this.revealCell(row, col);
             }
         });
-        
+
         gameBoard.addEventListener('contextmenu', (e) => {
             e.preventDefault();
             if (this.gameOver) return;
-            
+
             const cell = e.target;
             if (!cell.classList.contains('cell')) return;
-            
+
             const row = parseInt(cell.dataset.row);
             const col = parseInt(cell.dataset.col);
-            
+
             if (!this.revealed[row][col]) {
                 this.toggleFlag(row, col);
             }
         });
-        
+
         newGameBtn.addEventListener('click', () => {
+            this.resetGame();
+        });
+
+        restartBtn.addEventListener('click', () => {
             this.resetGame();
         });
     }
