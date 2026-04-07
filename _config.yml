@@ -13,3 +13,6 @@ show_downloads: false
 google_analytics: UA-00000000-0
 theme: jekyll-theme-cayman
 remote_theme: pages-themes/cayman@v0.17.0
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
