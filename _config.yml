@@ -2,3 +2,4 @@ url: https://z3n0-rgb.github.io/minesweeper-game
 baseurl: /minesweeper-game
 plugins:
   - jekyll-relative-links
+include: ['index.html', 'script.js', 'styles.css']
