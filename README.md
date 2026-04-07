@@ -90,6 +90,11 @@ If you have PHP installed:
 php -S localhost:8000
 ```
 
+### Running on GitHub Pages
+The game is also available online at: https://z3n0-rgb.github.io/minesweeper-game
+
+You can play it directly in your browser without any installation required.
+
 ## How to Play
 
 1. **Left-click** to reveal a cell
